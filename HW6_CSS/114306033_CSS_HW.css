@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeede1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+}
+.main-container {
+    width: 1000px;
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+.left-panel {
+    flex: 0 0 30%; 
+    background-color: #4a77a3;
+    color: white;
+    padding-bottom: 20px; 
+}
+
+.photo-panel img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.personal-info {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.personal-info h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.personal-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+.text-content {
+    padding: 0 20px;
+}
+
+.text-content h2 {
+    font-size: 1.2em;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-label {
+    font-weight: bold;
+}
+
+.school-icon {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.school-icon img {
+    width: 230px;
+    height: auto;
+}
+
+.right-panel {
+    flex: 1; 
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+.section-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.timeline-item .year {
+    flex: 0 0 120px; 
+    font-weight: bold;
+    color: #4a77a3;
+}
+
+.timeline-item .description {
+    flex: 1;
+}
+.skill-tags {
+    padding-top: 10px;
+}
+
+.tag {
+    display: inline-block; 
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.two-column-layout {
+    display: flex;
+    gap: 20px; 
+}
+
+.hw-column, .lab-column {
+    flex: 1;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px; 
+}
+
+.hw-column h3, .lab-column h3 {
+    margin-top: 0;
+    color: #4a77a3;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.hw-column ul, .lab-column ul {
+    padding-left: 20px; 
+    margin-top: 10px;
+}
+.hw-column li, .lab-column li {
+    margin-bottom: 5px;
+}
+
+.hw-link {
+    text-decoration: none; 
+    color: #555;
+    transition: color 0.3s;
+}
+
+.hw-link:hover {
+    color: #2a5a8a; 
+    text-decoration: underline;
+}
+
+
+.music-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.music-item {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    max-width: 100px;
+}
+
+.music-item img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.music-item:hover img {
+    transform: scale(1.05);
+}
+
+.music-item p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.music-note {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media (max-width: 1050px) {
+    .main-container {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .left-panel, .right-panel {
+        flex: 1 1 100%; 
+    }
+    .right-panel {
+        padding: 20px;
+    }
+    .two-column-layout {
+        flex-direction: column;
+    }
+}
